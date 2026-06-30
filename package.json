@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "cf:build": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && wrangler dev",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "build": "opennextjs-cloudflare build",
+    "build:next": "next build",
+    "cf:build": "npm run build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && opennextjs-cloudflare deploy",
     "start": "next start",
     "lint": "next lint"
   },
