@@ -161,11 +161,14 @@ export async function getPaymentSchedule(recordId: string): Promise<PaymentSched
 
   const status = normalize(record[statusField]);
   const formUrl = normalize(record[formUrlField]);
-  const pendingStatuses = csvEnv("PENDING_STATUS_VALUES", ["pending"]);
+  const completedStatuses = csvEnv("COMPLETED_STATUS_VALUES", [
+    "payment completed",
+    "completed"
+  ]);
 
   return {
     status,
     formUrl,
-    isPending: pendingStatuses.includes(status.toLowerCase())
+    isPending: !completedStatuses.includes(status.toLowerCase())
   };
 }

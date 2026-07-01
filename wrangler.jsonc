@@ -21,7 +21,7 @@
     "ZOHO_PAYMENT_MODULE_API_NAME": "Payment_Schedule",
     "ZOHO_STATUS_FIELD_API_NAME": "Payment_Status",
     "ZOHO_FORM_URL_FIELD_API_NAME": "Form_Link",
-    "PENDING_STATUS_VALUES": "Pending,Processing,Failed"
+    "COMPLETED_STATUS_VALUES": "Payment Completed,Completed"
   },
   "images": {
     "binding": "IMAGES"
