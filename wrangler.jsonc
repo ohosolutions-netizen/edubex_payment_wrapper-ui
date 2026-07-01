@@ -15,6 +15,14 @@
       "service": "edubex-payment-wrapper-ui"
     }
   ],
+  "vars": {
+    "ZOHO_ACCOUNTS_BASE_URL": "https://accounts.zoho.in",
+    "ZOHO_API_BASE_URL": "https://www.zohoapis.in",
+    "ZOHO_PAYMENT_MODULE_API_NAME": "Payment_Schedule",
+    "ZOHO_STATUS_FIELD_API_NAME": "Payment_Status",
+    "ZOHO_FORM_URL_FIELD_API_NAME": "Form_Link",
+    "PENDING_STATUS_VALUES": "Pending,Processing,Failed"
+  },
   "images": {
     "binding": "IMAGES"
   }

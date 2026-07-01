@@ -161,8 +161,7 @@ export async function getPaymentSchedule(recordId: string): Promise<PaymentSched
 
   const status = normalize(record[statusField]);
   const formUrl = normalize(record[formUrlField]);
-  // const pendingStatuses = csvEnv("PENDING_STATUS_VALUES", ["pending"]);
-    const pendingStatuses = ["pending", "failed", "processing","overdue","network error","card declined"];
+  const pendingStatuses = csvEnv("PENDING_STATUS_VALUES", ["pending"]);
 
   return {
     status,
