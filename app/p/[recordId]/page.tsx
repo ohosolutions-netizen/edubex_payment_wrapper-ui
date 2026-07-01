@@ -2,9 +2,9 @@ import { redirect } from "next/navigation";
 import { getPaymentSchedule } from "../../services/zoho";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     recordId: string;
-  };
+  }>;
 };
 
 export const dynamic = "force-dynamic";
